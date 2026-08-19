@@ -1,0 +1,14 @@
+{
+  "name": "dsh-cron",
+  "version": "0.1.0",
+  "description": "Cron 解析：解析 5 字段 cron 表达式，返回人类可读描述与接下来 N 次执行时间",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": { ".": "./lib/index.js", "./cordis.patch.yml": "./cordis.patch.yml", "./package.json": "./package.json" },
+  "files": ["lib/index.js", "cordis.patch.yml", "README.md", "LICENSE"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "keywords": ["deepseek-harness", "dsh", "dsh-plugin", "cron", "schedule", "定时"],
+  "author": "istone <ad571@qq.com>",
+  "license": "MIT",
+  "peerDependencies": { "@deepseek-ai/cordis": "^4.0.1", "@deepseek-ai/dsh-tools": ">=0.1.0-rc.6" }
+}
