@@ -1,0 +1,4 @@
+# Cron 解析（dsh-cron）bundle patch：作为 profile 的一层 patch，插入本插件的加载行。
+- insert:
+    - id: cron
+      name: 'dsh-cron'
